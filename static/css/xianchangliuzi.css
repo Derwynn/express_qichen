@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+html{  font-size: 100px;  }
+.inner{ width: 6.90rem; height:auto; margin: 0 auto; }
+
+
+.wrap{
+    max-width: 7.50rem;
+    min-width: 3.20rem;
+    margin: 0 auto;
+}
+.wrap .beijing{
+    background: url(../images/bg01.jpg)no-repeat center;
+    background-size: 100% 100%;
+}
+
+/*header*/
+.wrap header .backBox{
+
+    height: 0.80rem;
+    background:linear-gradient(#1a191f, #323733);
+    position: relative;
+        display:flex;
+        -webkit-justify-content: space-around;
+        justify-content: space-around;
+}
+.wrap header .backBox .a1{
+    display: inline-block;
+    font:0.30rem/0.80rem '微软雅黑';
+    color: #fff;
+    
+    background: url(../images/jiantou.png) no-repeat center left;
+    background-size: 0.30rem 0.30rem;
+    padding-left: 0.30rem;
+}
+.wrap header .backBox .a2{
+    display: inline-block;
+    font:0.30rem/0.80rem '微软雅黑';
+    color: #fff;
+
+}
+.wrap header .backBox .a3{
+    display: inline-block;
+    background: url(../images/gengduo.png) no-repeat center left;
+    background-size: 0.51rem 0.12rem;
+    padding-left: 0.51rem;
+
+}
+
+
+/*banner*/
+.wrap .banner{
+    text-align: center;
+}
+.wrap .banner img{
+    width: 3.12rem;
+    height: 0.75rem;
+    padding-top: 0.56rem;
+   
+}
+.wrap .banner p{
+    font:0.26rem/0.45rem '微软雅黑';
+    color:#636365;
+    text-align: left;
+    width: 6.30rem;
+    margin: 0 auto;
+    padding: 0.22rem 0;
+   }
+.wrap .banner .img1{
+    padding-top: 0.08rem;
+
+    width: 5.94rem;
+    height: 0.86rem;
+}
+
+
+/*主要内容*/
+.wrap .activity{
+    text-align: center;
+}
+.wrap .activity a{
+    display:block;
+    font:0.40rem/0.97rem '微软雅黑';
+    color: #fff;
+    width: 4.33rem;
+    height: 0.97rem;
+    margin: 0.15rem auto;
+    text-shadow:0 0 0.2em #d5a1d1,
+                -0 -0 0.2em #d5a1d1;
+    background: url(../images/btn01.png)no-repeat center ;
+    padding-top: 0.20rem;
+}
+
+
+
+/*底部*/
+footer{
+    text-align: center;
+    padding-bottom: 4.00rem;
+}
+footer p .huodong{
+    font:0.40rem '微软雅黑';
+    color: #0337a7;
+    text-decoration:underline;
+
+}
+footer div{
+    display: flex;
+    justify-content: center;
+    padding-top: 0.50rem;
+}
+footer .p2{
+    font:0.26rem/0.45rem '微软雅黑';
+    color:#636365;
+    margin-top: 0.12rem;
+}
+footer a{
+    display: inline-block;
+        margin-left: 0.30rem;
+}
+footer .a1{
+    width: 0.68rem;
+    height: 0.68rem;
+    background: url(../images/weixin.png) no-repeat center;
+    background-size: 100%
+}
+footer .a2{
+    width: 0.68rem;
+    height: 0.68rem;
+    background: url(../images/xlwb.png) no-repeat center;
+    background-size: 100%
+}
+footer .a3{
+    width: 0.68rem;
+    height: 0.68rem;
+    background: url(../images/txwb.png) no-repeat center;
+    background-size: 100%
+}
+

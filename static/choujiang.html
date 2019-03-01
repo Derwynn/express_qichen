@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0"/>
+    <title>启辰</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/choujiang.css"/>
+    <script src="js/remScale.js"></script>
+</head>
+<body>
+<div class="wrap">
+<div class="beijing">
+<!--header-->
+<header>
+    <div class="backBox">
+        <a class="a1" href="index.html">返回</a>
+        <a class="a2" href="#">码 上 辰 献</a>
+        <a class="a3" href="#"></a>
+    </div>
+</header>
+<!--banner-->
+<div class="banner">
+    <img src="images/bg02.jpg" alt="pic"/>
+</div>
+<!--主要内容-->
+<div class="activity">
+<h3>幸运“触”手可及</h3>
+<p>轻触任意一款启辰车型牌即可参与抽奖</p>
+ 
+</div>
+
+<div id="chexing">
+    <a class="btn" ><img class="img" src="./images/qc_01.png" ><img class="img1" src="./images/qc_01.png" style="display: none"></a>
+    <a class="btn" ><img class="img" src="./images/qc_02.png"><img class="img1" src="./images/qc_02.png" style="display: none"></a>
+    <a class="btn" ><img class="img" src="./images/qc_03.png"><img class="img1" src="./images/qc_03.png" style="display: none"></a>
+    <a class="btn" ><img class="img" src="./images/qc_04.png"><img class="img1" src="./images/qc_04.png" style="display: none"></a>
+    <a class="btn" ><img class="img" src="./images/qc_05.png"><img class="img1" src="./images/qc_05.png" style="display: none"></a>
+    <a class="btn" ><img class="img" src="./images/qc_06.png"><img class="img1" src="./images/qc_06.png" style="display: none"></a>
+</div>
+
+
+</div>
+</div>
+<script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+
+
+
+
+
+
+        var div = document.getElementsByClassName('btn');
+        var img = document.getElementsByClassName('img');
+        var box = document.getElementById('chexing');
+        
+       
+        for (var i=0;i<div.length;i++) {
+            
+           div[i].index=i;
+          
+           div[i].onclick=function(){
+
+                // var _this=this;
+                setTimeout(()=>{
+
+                   
+                    if(localStorage.getItem('a')){
+                        window.open('yicanjiachoujiang.html','_self');
+                        // _this.href='yicanjiachoujiang.html';
+                        return;
+                    }
+
+                    localStorage.setItem('a',true)
+                    var n=Math.random();
+                    
+                    if(n>0.9){
+                        window.open('changneizhongjiang.html','_self');
+                        // _this.href='changneizhongjiang.html';
+                    }else if(n>0.3&&n<0.9){
+                        window.open('changneizhongjiang.html','_self');
+                        // _this.href='changwaizhongjiang.html';
+                    }else{
+                        window.open('weizhongjiang.html','_self');
+                        // _this.href='weizhongjiang.html';
+                    }
+                },1400)
+            }
+    } 
+
+       
+
+        
+
+
+
+
+
+
+
+        var div = $('#chexing');
+        var isFirst = true;
+    $(function() {
+        div.on("click", ".btn", function(event) {
+        // if(isFirst){
+        isFirst = false;
+        var target = $(event.target);
+        target.css({
+            "transformStyle": "preserve-3d",
+            "-webkitTransform": "rotateY(90deg)",
+            "-webkitTransition": "all 0.6s"
+        });
+        setTimeout(function() {
+            target.find(".img").show();
+            target.find(".img").css({
+                'transform': 'rotateY(180deg)',
+                'display': 'block'
+            });
+            target.css('background', 'none')
+        }, 700);
+        setTimeout(function() {
+            target.css({
+                "transformStyle": "preserve-3d",
+                "-webkitTransform": "rotateY(180deg)",
+                "-webkitTransition": "all 0.6s"
+            });
+        }, 800);
+    })
+    })
+    </script>
+</body>
+</html>

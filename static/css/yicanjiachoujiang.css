@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+html{  font-size: 100px;  }
+.inner{ width: 6.90rem; height:auto; margin: 0 auto; }
+
+/*header*/
+.wrap{
+    max-width: 7.50rem;
+    min-width: 3.20rem;
+    margin: 0 auto;
+}
+.wrap .beijing{
+    background: url(../images/bg01.jpg)no-repeat center;
+    background-size: 100% 100%;
+}
+.wrap header .backBox{
+    height: 0.80rem;
+    background:linear-gradient(#1a191f, #323733);
+    position: relative;
+        display:flex;
+        -webkit-justify-content: space-around;
+        justify-content: space-around;
+}
+.wrap header .backBox .a1{
+    display: inline-block;
+    font:0.30rem/0.80rem '微软雅黑';
+    color: #fff;
+    
+    background: url(../images/jiantou.png) no-repeat center left;
+    background-size: 0.30rem 0.30rem;
+    padding-left: 0.30rem;
+}
+.wrap header .backBox .a2{
+    display: inline-block;
+    font:0.30rem/0.80rem '微软雅黑';
+    color: #fff;
+
+}
+.wrap header .backBox .a3{
+    display: inline-block;
+    background: url(../images/gengduo.png) no-repeat center left;
+    background-size: 0.51rem 0.12rem;
+    padding-left: 0.51rem;
+
+}
+
+
+/*banner*/
+.wrap .banner{
+    text-align: center;
+}
+.wrap .banner img{
+    width: 100%;
+    height: auto;
+}
+
+
+/*主要内容*/
+.wrap .activity{
+    text-align: center;
+    padding-bottom: 5.20rem;
+}
+.wrap .activity h3{
+    font:bold 0.62rem '微软雅黑';
+    color:#002570;
+    padding-top: 0.60rem;
+    padding-bottom: 0.35rem;
+   
+}
+.wrap .activity p{
+    text-align: left;
+    font:bold 0.36rem/0.71rem '微软雅黑';
+    color: #6d7371;
+    width: 5.80rem;
+    margin:0 auto;
+
+}
+.wrap .activity p span{
+    color: #103677;
+}
